@@ -191,3 +191,4 @@ app.mount("/external-img", StaticFiles(directory=external_img_directory), name="
 
 # To run the server:
 # uvicorn backend:app --reload
+# uvicorn backend:app --host 0.0.0.0 --port $PORT 
