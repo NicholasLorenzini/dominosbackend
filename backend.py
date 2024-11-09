@@ -158,7 +158,7 @@ async def process_image(file: UploadFile = File(...)):
         logging.info(f"Processed image saved to {filepath}")
 
         # Prepare the response with URL, detections, and counts
-        image_url = f"http://localhost:8000/external-img/{filename}"
+        image_url = f"https://dominosbackend.onrender.com/external-img/{filename}"
         logging.info(f"Generated image URL: {image_url}")  # Debug log for image URL
         return JSONResponse(content={
             "url": image_url,
