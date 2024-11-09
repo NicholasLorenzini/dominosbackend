@@ -22,7 +22,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:8080"],  # List the allowed origins (your frontend URL)
+    allow_origins=["http://127.0.0.1:8080", "https://dominohelper.netlify.app/"],  # List the allowed origins (your frontend URL)
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods (POST, GET, etc.)
     allow_headers=["*"],  # Allow all headers
